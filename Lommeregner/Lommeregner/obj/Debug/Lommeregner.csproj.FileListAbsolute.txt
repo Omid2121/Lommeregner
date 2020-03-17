@@ -1,0 +1,9 @@
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\bin\Debug\Lommeregner.exe.config
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\bin\Debug\Lommeregner.exe
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\bin\Debug\Lommeregner.pdb
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csprojAssemblyReference.cache
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.Form1.resources
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.Properties.Resources.resources
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csproj.GenerateResource.cache
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.exe
+C:\Users\omidh\Documents\GitHub\Lommeregner\Lommeregner\Lommeregner\obj\Debug\Lommeregner.pdb
