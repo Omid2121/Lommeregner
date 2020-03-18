@@ -160,5 +160,35 @@ namespace Lommeregner
                     break;
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void firkant_Button_Click(object sender, EventArgs e)
+        {
+            string firkant = this.Text;
+            textBox1.Text = "Areal af firkant: A = a * b                               (Hvor a er længden, og b er bredden.)";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string cirkel = this.Text;
+            textBox1.Text = "Areal af cirkel: A = pi * (R^2-r^2)                    Hvor: A = Arealet                                                r = Radius af den lille cirkel                             R = radius af den store cirkel";
+        }
+
+        private void trapez_Button_Click(object sender, EventArgs e)
+        {
+            string trapez = this.Text;
+            textBox1.Text = "Areal af trapez:  Areal = 1/2 * (a+c) * h          (Hvor a og c er sidelængder, og h er højden.)";
+        }
+
+        private void kegle_Button_Click(object sender, EventArgs e)
+        {
+            string kelge = this.Text;
+            textBox1.Text = "Rumfang af kegle:  V = 1/3 * h * G";
+        }
     }
 }

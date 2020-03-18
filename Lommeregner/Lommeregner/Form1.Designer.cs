@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.one = new System.Windows.Forms.Button();
             this.two = new System.Windows.Forms.Button();
             this.three = new System.Windows.Forms.Button();
@@ -48,12 +49,13 @@
             this.clear_Enter = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
             this.equation = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.firkant_Button = new System.Windows.Forms.Button();
+            this.kegle_Button = new System.Windows.Forms.Button();
+            this.cirkel_Button = new System.Windows.Forms.Button();
+            this.trapez_Button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // one
@@ -257,7 +259,7 @@
             // result
             // 
             this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result.Location = new System.Drawing.Point(32, 23);
+            this.result.Location = new System.Drawing.Point(32, 16);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(306, 29);
             this.result.TabIndex = 1;
@@ -269,59 +271,54 @@
             this.equation.AutoSize = true;
             this.equation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equation.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.equation.Location = new System.Drawing.Point(35, 36);
+            this.equation.Location = new System.Drawing.Point(42, 23);
             this.equation.Name = "equation";
             this.equation.Size = new System.Drawing.Size(0, 18);
             this.equation.TabIndex = 2;
             // 
-            // button1
+            // firkant_Button
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(32, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = " Firkant";
-            this.button1.UseVisualStyleBackColor = true;
+            this.firkant_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firkant_Button.Location = new System.Drawing.Point(32, 150);
+            this.firkant_Button.Name = "firkant_Button";
+            this.firkant_Button.Size = new System.Drawing.Size(70, 30);
+            this.firkant_Button.TabIndex = 0;
+            this.firkant_Button.Text = " Firkant";
+            this.firkant_Button.UseVisualStyleBackColor = true;
+            this.firkant_Button.Click += new System.EventHandler(this.firkant_Button_Click);
             // 
-            // button2
+            // kegle_Button
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(268, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 30);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Kegle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.kegle_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kegle_Button.Location = new System.Drawing.Point(268, 150);
+            this.kegle_Button.Name = "kegle_Button";
+            this.kegle_Button.Size = new System.Drawing.Size(70, 30);
+            this.kegle_Button.TabIndex = 0;
+            this.kegle_Button.Text = "Kegle";
+            this.kegle_Button.UseVisualStyleBackColor = true;
+            this.kegle_Button.Click += new System.EventHandler(this.kegle_Button_Click);
             // 
-            // button3
+            // cirkel_Button
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(108, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 30);
-            this.button3.TabIndex = 0;
-            this.button3.Text = " Cirkles";
-            this.button3.UseVisualStyleBackColor = true;
+            this.cirkel_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cirkel_Button.Location = new System.Drawing.Point(108, 150);
+            this.cirkel_Button.Name = "cirkel_Button";
+            this.cirkel_Button.Size = new System.Drawing.Size(70, 30);
+            this.cirkel_Button.TabIndex = 0;
+            this.cirkel_Button.Text = " Cirkles";
+            this.cirkel_Button.UseVisualStyleBackColor = true;
+            this.cirkel_Button.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // trapez_Button
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(192, 150);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 30);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Trapez";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 15);
-            this.label1.TabIndex = 3;
+            this.trapez_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trapez_Button.Location = new System.Drawing.Point(192, 150);
+            this.trapez_Button.Name = "trapez_Button";
+            this.trapez_Button.Size = new System.Drawing.Size(70, 30);
+            this.trapez_Button.TabIndex = 0;
+            this.trapez_Button.Text = "Trapez";
+            this.trapez_Button.UseVisualStyleBackColor = true;
+            this.trapez_Button.Click += new System.EventHandler(this.trapez_Button_Click);
             // 
             // label2
             // 
@@ -334,6 +331,22 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "--------------------Arealet--------------------";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.Location = new System.Drawing.Point(32, 58);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(306, 69);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,18 +354,18 @@
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(374, 361);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.equation);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.plus);
             this.Controls.Add(this.dec);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.clear_Enter);
             this.Controls.Add(this.divide);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.trapez_Button);
+            this.Controls.Add(this.kegle_Button);
+            this.Controls.Add(this.cirkel_Button);
+            this.Controls.Add(this.firkant_Button);
             this.Controls.Add(this.nine);
             this.Controls.Add(this.eight);
             this.Controls.Add(this.seven);
@@ -402,12 +415,13 @@
         private System.Windows.Forms.Button clear_Enter;
         private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label equation;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button firkant_Button;
+        private System.Windows.Forms.Button kegle_Button;
+        private System.Windows.Forms.Button cirkel_Button;
+        private System.Windows.Forms.Button trapez_Button;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
